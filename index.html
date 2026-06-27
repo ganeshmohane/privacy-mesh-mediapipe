@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>PrivacyMesh</title>
+
+  <style>
+    body{
+      margin:0;
+      overflow:hidden;
+      background:black;
+    }
+
+    video,
+    canvas{
+      position:absolute;
+      top:0;
+      left:0;
+      width:100vw;
+      height:100vh;
+      object-fit:cover;
+    }
+
+    video{
+      transform:scaleX(-1);
+    }
+
+    canvas{
+      transform:scaleX(-1);
+    }
+  </style>
+</head>
+
+<body>
+
+<video id="video" autoplay playsinline muted></video>
+<canvas id="canvas"></canvas>
+
+<script type="module" src="app.js"></script>
+
+</body>
+</html>
